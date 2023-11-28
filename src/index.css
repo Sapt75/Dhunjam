@@ -1,13 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #030303;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.MuiChartsAxis-line{
+    stroke: white !important;
+}
+
+.MuiChartsAxis-directionY .MuiChartsAxis-tickContainer{
+    display: none !important;
+}
+
+.MuiChartsAxis-directionX .MuiChartsAxis-tickContainer .MuiChartsAxis-tickLabel{
+    fill: white !important;
+}
+
+.MuiBarElement-root{
+    width: 20px !important;
+}
+
+
+.css-1lbgfbl-MuiResponsiveChart-container g[clip-path="url(#:r1:-clip-path)"]{
+    transform: translate(20px , 0) !important;
+}
+
+.input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type='radio'] {
+    accent-color: #6741D9;
 }
